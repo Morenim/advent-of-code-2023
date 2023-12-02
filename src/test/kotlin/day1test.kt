@@ -26,16 +26,6 @@ internal class Day1Test {
     @Test
     fun testPartTwo() {
         val lines = Day1Test::class.java.getResource("/day1/part1.txt").readText().lines()
-        assertEquals(55445, day1part2(lines))
-    }
-
-    @Test
-    fun tmp() {
-
-        val lines = Day1Test::class.java.getResource("/day1/part1.txt").readText().lines().take(50)
-
-        val result = lines.map { day1part2(listOf(it)) }
-
-        assertEquals(listOf(0), result)
+        assertEquals(55413, day1part2(lines))
     }
 }
